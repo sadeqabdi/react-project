@@ -42,10 +42,12 @@
     
   },
   "scripts": {
+    "semantic:start": "gulp --gulpfile src/semantic/gulpfile.js watch",    
     "semantic:build": "gulp --gulpfile src/semantic/gulpfile.js build-css build-assets",
-    "semantic:watch": "gulp --gulpfile src/semantic/gulpfile.js watch",    
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "react:start": "react-scripts start",
+    "react:build": "react-scripts build",    
+    "start": "npm run semantic:start & react-scripts start",
+    "build": "npm run semantic:build && react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }

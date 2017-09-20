@@ -13,11 +13,11 @@ class App extends Component {
         </div>
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.<br />
-          To reload Semantic UI components on the fly, run <code>npm run semantic:watch</code> and adjust the overrides!
+          To customize SemanticUI, edit the files in <code>src/semantic/theme</code> and save to rebuild.
         </p>
 
         <Button>
-          I am a button!
+          I'm a Semantic UI button
         </Button>
       </div>
     );
