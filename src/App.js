@@ -11,9 +11,14 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h2>Welcome to React-Semantic-Boilerplate</h2>
         </div>
+
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.<br />
-          To customize SemanticUI, edit the files in <code>src/semantic/theme</code> and save to rebuild.
+          To customize SemanticUI, edit the files in <code>src/semantic/src/themes/custom</code> and save to rebuild.
+        </p>
+
+        <p className="App-note">
+            If you are using a *nix system, you can edit SemanticUI in <code>src/semantic/theme</code>
         </p>
 
         <Button>
