@@ -1,8 +1,8 @@
-<p style="text-align:center;">
-    <img src="https://react.semantic-ui.com/logo.png" alt="Semantic UI React logo">
+<p align="center">
+    <img src="https://react.semantic-ui.com/logo.png" alt="Semantic UI React logo" align="center">
 </p>
 
-# react-semantic-boilerplate
+<h1 align="center">react-semantic-boilerplate</h1>
 
 **NOTE: This project is not officially associated with Semantic UI and/or Facebook in any way. It is just a simple helpful boilerplate made by me.**
 
