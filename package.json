@@ -8,6 +8,10 @@
     "semantic-ui-react": "^0.73.1"
   },
   "devDependencies": {
+    "better-console": "*",
+    "concurrently": "^3.5.1",
+    "del": "*",
+    "extend": "*",
     "gulp": "*",
     "gulp-autoprefixer": "*",
     "gulp-chmod": "*",
@@ -32,21 +36,17 @@
     "gulp-util": "*",
     "gulp-watch": "*",
     "map-stream": "*",
+    "react-scripts": "1.0.13",
     "require-dot-file": "*",
     "run-sequence": "*",
-    "yamljs": "*",
-    "better-console": "*",
-    "del": "*",
-    "extend": "*",
-    "react-scripts": "1.0.13"
-    
+    "yamljs": "*"
   },
   "scripts": {
-    "semantic:start": "gulp --gulpfile src/semantic/gulpfile.js watch",    
+    "semantic:start": "gulp --gulpfile src/semantic/gulpfile.js watch",
     "semantic:build": "gulp --gulpfile src/semantic/gulpfile.js build-css build-assets",
     "react:start": "react-scripts start",
-    "react:build": "react-scripts build",    
-    "start": "npm run semantic:start & react-scripts start",
+    "react:build": "react-scripts build",
+    "start": "concurrently \"npm run semantic:start\" \"react-scripts start\"",
     "build": "npm run semantic:build && react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
