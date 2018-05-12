@@ -22,7 +22,7 @@ class App extends Component {
         </p>
 
         <Button>
-          I'm a Semantic UI button
+          I'm a Semantic UI button ////
         </Button>
       </div>
     );
